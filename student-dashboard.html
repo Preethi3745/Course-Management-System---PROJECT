@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h2>Student Dashboard</h2>
+
+<p id="info"></p>
+
+
+
+<!-- Enroll Course -->
+
+<div class="card">
+
+<h3>Enroll Course</h3>
+
+
+<select id="course">
+
+<option value="">
+Select Course
+</option>
+
+<option value="Python Programming">
+Python Programming
+</option>
+
+<option value="Web Development">
+Web Development
+</option>
+
+<option value="Artificial Intelligence">
+Artificial Intelligence
+</option>
+
+</select>
+
+
+<button onclick="enrollCourse()">
+Enroll
+</button>
+
+
+<p id="enrollStatus"></p>
+
+
+</div>
+
+
+
+
+
+<!-- Course Details -->
+
+<div class="card">
+
+
+<h3>Course Details</h3>
+
+
+<p>
+View complete information about courses.
+</p>
+
+
+<button onclick="viewCourse()">
+View Course Details
+</button>
+
+
+</div>
+
+
+<!-- Notifications -->
+
+<div class="card">
+
+
+<h3>Notifications</h3>
+
+
+<p>
+Check latest course updates.
+</p>
+
+
+<button onclick="openNotifications()">
+View Notifications
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Modules -->
+
+<div class="module">
+
+<h4>
+Python Programming
+</h4>
+
+<ol>
+
+<li>
+Module 1: Introduction to Python
+</li>
+
+<li>
+Module 2: Variables and Data Types
+</li>
+
+<li>
+Module 3: Functions
+</li>
+
+<li>
+Module 4: Object Oriented Programming
+</li>
+
+</ol>
+
+</div>
+
+
+
+<div class="module">
+
+<h4>
+Web Development
+</h4>
+
+<ol>
+
+<li>
+Module 1: HTML Basics
+</li>
+
+<li>
+Module 2: CSS Styling
+</li>
+
+<li>
+Module 3: JavaScript
+</li>
+
+<li>
+Module 4: Projects
+</li>
+
+</ol>
+
+</div>
+
+
+
+<div class="module">
+
+<h4>
+Artificial Intelligence
+</h4>
+
+<ol>
+
+<li>
+Module 1: Introduction to AI
+</li>
+
+<li>
+Module 2: Machine Learning Basics
+</li>
+
+<li>
+Module 3: Neural Networks
+</li>
+
+<li>
+Module 4: AI Project
+</li>
+
+</ol>
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+
+function viewCourse(){
+
+    localStorage.setItem(
+        "selectedCourse",
+        "Python Programming"
+    );
+
+
+    window.location.href =
+    "course-details.html";
+
+}
+
+
+
+
+function editCourse(){
+
+    localStorage.setItem(
+        "selectedCourse",
+        "Python Programming"
+    );
+
+
+    window.location.href =
+    "edit-course.html";
+
+}
+
+
+
+
+
+function openNotifications(){
+
+    window.location.href =
+    "notifications.html";
+
+}
+
+
+</script>
+
+
+
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/enrollment.js"></script>
+
+<script src="js/progress.js"></script>
+
+
+</body>
+
+</html>

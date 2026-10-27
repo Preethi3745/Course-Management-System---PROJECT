@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Progress | LearnCo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Course Progress</h2>
+    <div class="card progress-card">
+    <h3 id="courseName">Loading course...</h3>
+    <progress id="p" max="100" value="0"></progress>
+    <p id="progressText">0% Completed</p>
+    <button id="completeCourse" type="button" onclick="update()">Finish Course</button>
+    <p id="certificateLink" hidden>
+        Course completed! <a href="certificate.html">Get your certificate</a>
+    </p>
+    <a href="my-courses.html">Back to My Courses</a>
+    </div>
+</div>
+<script src="js/progress.js"></script>
+</body>
+</html>

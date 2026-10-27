@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Success | LearnCo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">LearnCo</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="browse-courses.html">Browse Courses</a>
+                <a href="my-courses.html">My Courses</a>
+            </div>
+            <div class="nav-actions">
+                <a href="student-dashboard.html" class="btn-signup">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="success-main">
+        <section class="success-card" aria-labelledby="success-title">
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <p class="success-eyebrow">YOU'RE ALL SET</p>
+            <h1 id="success-title">Enrollment Successful!</h1>
+            <p class="success-message">Your learning journey starts now. Here are the courses in your learning list:</p>
+
+            <ul id="myList" class="success-course-list" aria-live="polite"></ul>
+
+            <a href="student-dashboard.html" class="btn btn-accent success-dashboard-link">Back to Dashboard</a>
+        </section>
+    </main>
+
+    <script>
+        const myCourses = JSON.parse(localStorage.getItem("myCourses")) || [];
+        const uniqueCourses = [...new Set(myCourses)];
+        const courseProgress = JSON.parse(localStorage.getItem("courseProgress")) || {};
+        localStorage.setItem("myCourses", JSON.stringify(uniqueCourses));
+
+        const list = document.getElementById("myList");
+        uniqueCourses.forEach((course) => {
+            const item = document.createElement("li");
+            const name = document.createElement("strong");
+            name.textContent = course;
+
+            const progressText = document.createElement("span");
+            const progress = courseProgress[course] || 0;
+            progressText.textContent = progress + "% Completed";
+
+            const progressBar = document.createElement("progress");
+            progressBar.max = 100;
+            progressBar.value = progress;
+            progressBar.setAttribute("aria-label", course + " progress");
+
+            item.append(name, progressBar, progressText);
+            list.appendChild(item);
+        });
+    </script>
+</body>
+
+</html>

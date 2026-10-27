@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Courses | LearnCo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">LearnCo</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="browse-courses.html" class="active">Browse Courses</a>
+                <a href="my-courses.html">My Courses</a>
+            </div>
+            <div class="nav-actions">
+                <a href="student-dashboard.html" class="btn-signup">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page">
+        <div class="container">
+            <h2>Browse Courses</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Python Programming</h3>
+                    <p>Learn programming fundamentals, problem solving, and application development with Python.</p>
+                    <button class="btn btn-accent" type="button" onclick="enroll('Python Programming')">Enroll</button>
+                </article>
+                <article class="card">
+                    <h3>Web Development</h3>
+                    <p>Build websites with HTML, CSS, JavaScript, and hands-on projects.</p>
+                    <button class="btn btn-accent" type="button" onclick="enroll('Web Development')">Enroll</button>
+                </article>
+                <article class="card">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Explore artificial intelligence, machine learning, and neural networks.</p>
+                    <button class="btn btn-accent" type="button" onclick="enroll('Artificial Intelligence')">Enroll</button>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/enrollment.js"></script>
+</body>
+
+</html>

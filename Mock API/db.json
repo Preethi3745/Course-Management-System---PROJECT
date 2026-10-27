@@ -1,0 +1,121 @@
+{
+  "users": [
+    { "id": 1, "name": "Arun Kumar", "email": "arun@example.com", "password": "student123", "role": "student" },
+    { "id": 2, "name": "Priya Sharma", "email": "priya@example.com", "password": "student123", "role": "student" }
+  ],
+  "admins": [
+    { "id": 1, "username": "admin", "password": "admin123" }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Python Programming",
+      "icon": "💻",
+      "category": "Programming",
+      "duration": "8 Weeks",
+      "hours": "8 Hours",
+      "level": "Beginner",
+      "price": 455,
+      "instructor": "Dr. John Smith",
+      "description": "Learn programming fundamentals, problem solving, data structures, and application development using Python.",
+      "modules": [
+        "Module 1: Introduction to Python",
+        "Module 2: Variables, Data Types and Operators",
+        "Module 3: Functions and Object Oriented Programming",
+        "Module 4: Mini Project Development"
+      ],
+      "materials": ["Python Notes PDF", "Practice Programs", "Assignment Files", "Project Guidelines"],
+      "certificateInfo": "Complete all modules to receive a certificate."
+    },
+    {
+      "id": 2,
+      "name": "Web Development",
+      "icon": "🌐",
+      "category": "Web",
+      "duration": "6 Weeks",
+      "hours": "12 Hours",
+      "level": "Beginner",
+      "price": 599,
+      "instructor": "Ms. Anita Rao",
+      "description": "Build responsive websites using HTML, CSS and JavaScript.",
+      "modules": [
+        "Module 1: HTML Basics",
+        "Module 2: CSS Styling",
+        "Module 3: JavaScript",
+        "Module 4: Projects"
+      ],
+      "materials": ["HTML Cheat Sheet", "CSS Exercises", "JavaScript Practice Files"],
+      "certificateInfo": "Complete all modules to receive a certificate."
+    },
+    {
+      "id": 3,
+      "name": "Artificial Intelligence",
+      "icon": "🤖",
+      "category": "Artificial Intelligence",
+      "duration": "10 Weeks",
+      "hours": "10 Hours",
+      "level": "Intermediate",
+      "price": 0,
+      "instructor": "Dr. Ravi Menon",
+      "description": "Explore AI concepts, machine learning basics and neural networks (Deep Learning).",
+      "modules": [
+        "Module 1: Introduction to AI",
+        "Module 2: Machine Learning Basics",
+        "Module 3: Neural Networks",
+        "Module 4: AI Project"
+      ],
+      "materials": ["AI Notes PDF", "Datasets", "Project Guidelines"],
+      "certificateInfo": "Complete all modules to receive a certificate."
+    },
+    {
+      "id": 4,
+      "name": "Object-Oriented Programming",
+      "icon": "☕",
+      "category": "Java",
+      "duration": "8 Weeks",
+      "hours": "14 Hours",
+      "level": "Intermediate",
+      "price": 699,
+      "instructor": "Mr. Suresh Babu",
+      "description": "Master object-oriented programming concepts using Java.",
+      "modules": [
+        "Module 1: Classes and Objects",
+        "Module 2: Inheritance and Polymorphism",
+        "Module 3: Exceptions and Collections",
+        "Module 4: Mini Project"
+      ],
+      "materials": ["Java Notes PDF", "Practice Programs"],
+      "certificateInfo": "Complete all modules to receive a certificate."
+    }
+  ],
+  "enrollments": [
+    { "id": 1, "userId": 1, "courseId": 1, "courseName": "Python Programming", "enrolledOn": "2026-09-01" },
+    { "id": 2, "userId": 1, "courseId": 3, "courseName": "Artificial Intelligence", "enrolledOn": "2026-09-10" },
+    { "id": 3, "userId": 2, "courseId": 2, "courseName": "Web Development", "enrolledOn": "2026-09-15" }
+  ],
+  "progress": [
+    { "id": 1, "userId": 1, "courseId": 1, "courseName": "Python Programming", "completedModules": 2, "totalModules": 4, "percentage": 50 },
+    { "id": 2, "userId": 1, "courseId": 3, "courseName": "Artificial Intelligence", "completedModules": 0, "totalModules": 4, "percentage": 0 },
+    { "id": 3, "userId": 2, "courseId": 2, "courseName": "Web Development", "completedModules": 4, "totalModules": 4, "percentage": 100 }
+  ],
+  "notifications": [
+    { "id": 1, "userId": 1, "message": "You enrolled in Python Programming", "date": "2026-09-01", "read": false },
+    { "id": 2, "userId": 1, "message": "New material added: Practice Programs", "date": "2026-09-05", "read": false },
+    { "id": 3, "userId": 1, "message": "You enrolled in Artificial Intelligence", "date": "2026-09-10", "read": true },
+    { "id": 4, "userId": 2, "message": "Congratulations! You completed Web Development", "date": "2026-09-28", "read": false }
+  ],
+  "certificates": [
+    { "id": 1, "userId": 2, "studentName": "Priya Sharma", "courseId": 2, "courseName": "Web Development", "date": "2026-09-28" }
+  ],
+  "modules": [
+    { "id": 1, "courseId": 1, "title": "Module 1: Introduction to Python", "content": "Module Content Here", "videoUrl": "video-player.html", "materialsUrl": "materials.html" },
+    { "id": 2, "courseId": 1, "title": "Module 2: Variables, Data Types and Operators", "content": "Module Content Here", "videoUrl": "video-player.html", "materialsUrl": "materials.html" },
+    { "id": 3, "courseId": 1, "title": "Module 3: Functions and Object Oriented Programming", "content": "Module Content Here", "videoUrl": "video-player.html", "materialsUrl": "materials.html" },
+    { "id": 4, "courseId": 1, "title": "Module 4: Mini Project Development", "content": "Module Content Here", "videoUrl": "video-player.html", "materialsUrl": "materials.html" }
+  ],
+  "session": {
+    "currentUser": { "id": 1, "name": "Arun Kumar", "email": "arun@example.com" },
+    "selectedCourse": "Python Programming",
+    "isAdminLoggedIn": false
+  }
+}

@@ -1,0 +1,1106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff914d,#ff4d8d,#7b2cbf);
+    min-height:100vh;
+}
+
+.navbar{
+    background:white;
+    padding:18px 50px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    font-size:32px;
+    font-weight:bold;
+    color:#7b2cbf;
+    text-decoration:none;
+}
+
+.nav-links a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#444;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#ff4d8d;
+}
+
+.btn-login{
+    text-decoration:none;
+    color:#7b2cbf;
+    margin-right:15px;
+    font-weight:bold;
+}
+
+.btn-signup{
+    text-decoration:none;
+    background:#ff4d8d;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+.hero{
+    padding:90px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:white;
+    font-size:22px;
+    width:60%;
+    line-height:1.7;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+.btn-accent{
+    background:#ffd60a;
+    color:#222;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.page{
+    padding:60px 0;
+    background:#fff8f3;
+}
+
+h2{
+    text-align:center;
+    color:#7b2cbf;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.grid{
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.card:nth-child(1){
+    border-top:8px solid #ff4d8d;
+}
+
+.card:nth-child(2){
+    border-top:8px solid #00c897;
+}
+
+.card:nth-child(3){
+    border-top:8px solid #ff914d;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#7b2cbf;
+    margin:15px 0;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+footer{
+    background:#7b2cbf;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+/* =========================
+   EXTRA COURSE WEBSITE DESIGN
+========================= */
+
+
+/* Admin Button */
+
+.btn-admin{
+    text-decoration:none;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    padding:10px 22px;
+    border-radius:25px;
+    font-weight:bold;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.btn-admin:hover{
+    transform:scale(1.08);
+}
+
+
+
+
+/* Better Navbar */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+
+
+
+/* Portal Cards */
+
+.portal-card{
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.9),
+        rgba(255,240,250,.9)
+    );
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(123,44,191,.25);
+
+}
+
+
+
+
+/* Course Cards */
+
+.course-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+
+
+.course-card:hover{
+
+    transform:translateY(-15px) scale(1.03);
+
+    box-shadow:
+    0 20px 35px rgba(255,77,141,.35);
+
+}
+
+
+
+
+
+/* Course Category Labels */
+
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(135deg,#ff914d,#ff4d8d);
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* Buttons Animation */
+
+
+.btn,
+button{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover,
+button:hover{
+
+    transform:scale(1.05);
+
+    opacity:.9;
+
+}
+
+
+
+
+
+/* Dashboard Cards */
+
+
+.dashboard-card{
+
+    background:
+    linear-gradient(
+    135deg,
+    #ffffff,
+    #ffe6f2
+    );
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+
+
+/* Progress Bar */
+
+
+.progress-container {
+    width: 100%;
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 20px;
+    background: green;
+    width: 0%; /* starting point — must match JS default */
+    transition: width 0.3s ease;
+}
+
+
+
+
+/* Input Fields */
+
+
+input,
+select,
+textarea{
+
+    width:80%;
+
+    padding:14px;
+
+    margin:10px;
+
+    border-radius:12px;
+
+    border:2px solid #ddd;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#7b2cbf;
+
+    box-shadow:
+    0 0 10px #ff4d8d;
+
+}
+
+
+
+
+
+/* Login Pages */
+
+
+.container{
+
+    animation:fade .8s ease;
+
+}
+
+
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Notification Style */
+
+
+#n li,
+#myList li{
+
+    list-style:none;
+
+    background:
+    linear-gradient(
+    135deg,
+    #ffe6f2,
+    #ffffff
+    );
+
+    margin:15px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+
+
+/* Certificate Design */
+
+
+.certificate{
+
+    background:
+    linear-gradient(
+    135deg,
+    #fff,
+    #ffe6f2
+    );
+
+    border-radius:30px;
+
+    box-shadow:
+    0 15px 40px rgba(123,44,191,.3);
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:
+    linear-gradient(
+    135deg,
+    #7b2cbf,
+    #ff4d8d
+    );
+
+}
+/* Module List Alignment */
+
+.module ol{
+
+    padding-left:25px;
+
+}
+
+
+.module ol li{
+
+    padding-left:10px;
+
+    margin-bottom:12px;
+
+    line-height:1.6;
+
+}
+
+.success-main{
+    min-height:calc(100vh - 82px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.success-card{
+    width:100%;
+    max-width:760px;
+    padding:48px;
+    border-radius:25px;
+    background:linear-gradient(135deg,#fff,#ffe6f2);
+    border-top:8px solid #ff4d8d;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.success-icon{
+    width:68px;
+    height:68px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#00c897,#00a878);
+    color:white;
+    font-size:42px;
+    font-weight:bold;
+    line-height:68px;
+}
+
+.success-eyebrow{
+    margin-bottom:10px;
+    color:#7b2cbf;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.success-card h1{
+    margin-bottom:16px;
+    color:#7b2cbf;
+    font-size:clamp(30px,5vw,42px);
+}
+
+.success-message{
+    color:#555;
+    line-height:1.7;
+}
+
+.success-course-list{
+    max-width:520px;
+    margin:24px auto;
+    padding:0;
+}
+
+.success-course-list li{
+    list-style:none;
+    margin:12px 0;
+    padding:15px 20px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#ffe6f2,#fff);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    color:#444;
+    font-weight:bold;
+}
+
+.success-dashboard-link{
+    margin:8px 0 0;
+}
+
+.my-course-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+    margin:0 0 28px;
+    padding:0;
+}
+
+.my-course-item,
+.my-course-empty{
+    list-style:none;
+    padding:24px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#fff,#ffe6f2);
+    box-shadow:0 8px 20px rgba(0,0,0,.14);
+}
+
+.my-course-item h3{
+    margin-bottom:18px;
+    color:#7b2cbf;
+}
+
+.my-course-item progress,
+.progress-card progress,
+#p{
+    width:100%;
+    height:20px;
+    accent-color:#7b2cbf;
+}
+
+.my-course-item p{
+    margin:8px 0 16px;
+    color:#555;
+    font-weight:bold;
+}
+
+.my-course-actions{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:18px;
+}
+
+.progress-card{
+    max-width:700px;
+    margin:24px auto;
+}
+
+.progress-card h3{
+    margin-bottom:20px;
+    color:#7b2cbf;
+}
+
+.progress-card button{
+    margin:20px 10px;
+    padding:12px 22px;
+    border:0;
+    border-radius:24px;
+    background:#ff4d8d;
+    color:white;
+    font-weight:bold;
+}
+
+.progress-card button:disabled{
+    cursor:default;
+    opacity:.7;
+    transform:none;
+}
+
+.progress-card [hidden]{
+    display:none;
+}
+
+.certificate-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+    padding:40px 24px;
+}
+
+.certificate{
+    width:min(100%,1000px);
+    min-height:560px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:56px;
+    border:12px double #7b2cbf;
+    outline:2px solid #ff4d8d;
+    outline-offset:-22px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#fff,#fff8fc);
+    color:#444;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.certificate-brand{
+    margin-bottom:18px;
+    color:#7b2cbf;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.certificate h1{
+    margin-bottom:32px;
+    color:#7b2cbf;
+    font-size:clamp(32px,5vw,48px);
+}
+
+.certificate-intro{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.certificate h2{
+    margin:10px 0 20px;
+    color:#7b2cbf;
+    font-size:clamp(28px,4vw,40px);
+}
+
+.certificate-congratulations{
+    margin:8px 0 20px;
+    color:#555;
+    font-size:18px;
+}
+
+.certificate-actions{
+    text-align:center;
+}
+
+.certificate-actions button{
+    border:0;
+    font-size:16px;
+}
+
+.certificate-actions p{
+    margin-top:12px;
+    color:white;
+}
+
+@media print{
+    @page{
+        size:landscape;
+        margin:12mm;
+    }
+
+    body{
+        min-height:0;
+        background:white;
+        print-color-adjust:exact;
+        -webkit-print-color-adjust:exact;
+    }
+
+    .certificate-page{
+        min-height:0;
+        padding:0;
+    }
+
+    .certificate{
+        width:100%;
+        min-height:175mm;
+        border-radius:0;
+        box-shadow:none;
+        break-inside:avoid;
+    }
+
+    .certificate-actions{
+        display:none;
+    }
+}
+
+@media (max-width:640px){
+    .navbar{
+        padding:16px 20px;
+    }
+
+    .nav-inner{
+        flex-wrap:wrap;
+        gap:14px;
+    }
+
+    .nav-links{
+        order:3;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:8px;
+    }
+
+    .nav-links a{
+        margin:0 6px;
+    }
+
+    .success-main{
+        min-height:calc(100vh - 125px);
+        padding:35px 16px;
+    }
+
+    .success-card{
+        padding:32px 22px;
+    }
+}
+ 
+
+body{
+
+    background:
+    linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+    );
+
+}
+
+
+
+/* Dashboard title */
+
+.container > h2{
+
+    color:white;
+
+    font-size:42px;
+
+    text-shadow:
+    2px 3px 10px rgba(0,0,0,.3);
+
+}
+
+
+
+
+/* Dashboard Cards common style */
+
+.card{
+
+    border-radius:25px;
+
+    padding:30px;
+
+    margin:25px 0;
+
+    transition:.4s;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.25);
+
+}
+
+
+
+
+/* 1. Enroll Course */
+
+.card:nth-of-type(1){
+
+    background:
+    linear-gradient(
+    135deg,
+    #fff3b0,
+    #ffca3a
+    );
+
+    border-left:10px solid #ff9500;
+
+}
+
+
+
+
+
+/* 2. Course Details */
+
+.card:nth-of-type(2){
+
+    background:
+    linear-gradient(
+    135deg,
+    #caf0f8,
+    #48cae4
+    );
+
+    border-left:10px solid #0077b6;
+
+}
+
+
+
+
+
+/* 3. Edit Course */
+
+.card:nth-of-type(3){
+
+    background:
+    linear-gradient(
+    135deg,
+    #e0c3fc,
+    #8ec5fc
+    );
+
+    border-left:10px solid #7209b7;
+
+}
+
+
+
+
+
+/* 4. Notifications */
+
+.card:nth-of-type(4){
+
+    background:
+    linear-gradient(
+    135deg,
+    #ffc8dd,
+    #ffafcc
+    );
+
+    border-left:10px solid #ff006e;
+
+}
+
+
+
+
+
+/* 5. Modules */
+
+.card:nth-of-type(5){
+
+    background:
+    linear-gradient(
+    135deg,
+    #d8f3dc,
+    #95d5b2
+    );
+
+    border-left:10px solid #2d6a4f;
+
+}
+
+
+
+
+
+/* Module boxes */
+
+.module{
+
+    background:white;
+
+    padding:20px;
+
+    margin:15px;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 8px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+
+
+.module h4{
+
+    color:#7b2cbf;
+
+    font-size:22px;
+
+}
+
+
+
+
+/* 6. Progress */
+
+.card:last-child{
+
+    background:
+    linear-gradient(
+    135deg,
+    #ffd6a5,
+    #ffadad
+    );
+
+    border-left:10px solid #ff5400;
+
+}
+
+
+
+
+/* Buttons */
+
+button{
+
+    background:
+    linear-gradient(
+    135deg,
+    #7b2cbf,
+    #ff4d8d
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+    background:
+    linear-gradient(
+    135deg,
+    #ff4d8d,
+    #ff914d
+    );
+
+}
+
+
+
+
+/* Select dropdown */
+
+select{
+
+    padding:14px;
+
+    border-radius:15px;
+
+    border:none;
+
+    font-size:16px;
+
+}
+
+
+
+
+/* Progress bar */
+
+progress{
+
+    width:90%;
+
+    height:25px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+/* Dashboard animation */
+
+.card{
+
+    animation:slide .6s ease;
+
+}
+
+
+@keyframes slide{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
